@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
 import styles from './styles.css'
+import PaletteComponent from './components/PaletteComponent';
 
 export default class ExampleComponent extends Component {
   static propTypes = {
@@ -10,13 +11,16 @@ export default class ExampleComponent extends Component {
 
   render() {
     const {
-      text
+      text, paletteInfo
     } = this.props
 
+    // return (
+    //   <div className={styles.test}>
+    //     Example Component: {text}
+    //   </div>
+    // )
     return (
-      <div className={styles.test}>
-        Example Component: {text}
-      </div>
+      <PaletteComponent paletteInfo={paletteInfo} />
     )
   }
 }

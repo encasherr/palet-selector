@@ -2,7 +2,7 @@
   "name": "palet-selector",
   "version": "1.0.0",
   "description": "Select colors to apply on image",
-  "author": "",
+  "author": "Alok Jha",
   "license": "MIT",
   "repository": "/palet-selector",
   "main": "dist/index.js",
@@ -57,5 +57,6 @@
   },
   "files": [
     "dist"
-  ]
+  ],
+  "dependencies": {}
 }
